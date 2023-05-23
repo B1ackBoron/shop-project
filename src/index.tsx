@@ -1,14 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import './style.css'
 
-const Title = () => {
-    return <h1>Hello App component</h1>
+interface TitleProps {
+    title: string
+}
+
+const Title = (props: TitleProps) => {
+    return <h1>Hello {props.title} component</h1>
 }
 
 const Content = () => {
     return (
         <React.Fragment>
-            <p>
+            <p className="red">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Accusantium corporis earum quae quod, eum impedit ducimus ullam
                 similique numquam sint eos vel ipsa quidem dolores, dolore
@@ -26,7 +31,9 @@ const Content = () => {
 const App = () => {
     return (
         <>
-            <Title />
+            <Title title="App" />
+            <Title title="React" />
+
             <Content />
         </>
     )
