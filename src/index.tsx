@@ -2,32 +2,22 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './style.css'
 import Title from './Title'
+import { Content } from './Content'
 
-const Content = () => {
-    return (
-        <React.Fragment>
-            <p className="red">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Accusantium corporis earum quae quod, eum impedit ducimus ullam
-                similique numquam sint eos vel ipsa quidem dolores, dolore
-                fugit, delectus doloribus molestiae?
-            </p>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
-                ea error magni voluptate ab numquam alias, tenetur dolore quis,
-                deleniti magnam? Adipisci tempora, voluptas nobis ratione
-                impedit sit quod eveniet!
-            </p>
-        </React.Fragment>
-    )
-}
 const App = () => {
     return (
         <>
             <Title title="App" />
             <Title title="React" num={2} />
 
-            <Content />
+            <Content
+                text1={
+                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias voluptatibus porro reiciendis quaerat dolores labore repudiandae nulla, corrupti autem eius earum fugiat est deserunt, minus perferendis accusamus non culpa placeat ut quia nostrum quos enim. Explicabo aperiam repellendus minima optio, amet eius non porro tenetur sapiente ex dolorem magni quod.'
+                }
+                text2={
+                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias voluptatibus porro reiciendis quaerat dolores labore repudiandae nulla, corrupti autem eius earum fugiat est deserunt, minus perferendis accusamus non culpa placeat ut quia nostrum quos enim. Explicabo aperiam repellendus minima optio, amet eius non porro tenetur sapiente ex dolorem magni quod.'
+                }
+            />
         </>
     )
 }
