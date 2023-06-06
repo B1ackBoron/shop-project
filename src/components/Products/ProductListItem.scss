@@ -30,3 +30,10 @@
     height: auto;
   }
 }
+
+.product-quantity {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  input {text-align: center;}
+}
