@@ -41,7 +41,12 @@ const App = () => {
                                 <Home addProductToCart={addProductToCart} />
                             }
                         />
-                        <Route path="/cart" element={<CartPage />} />
+                        <Route
+                            path="/cart"
+                            element={
+                                <CartPage productsInCart={productsInCart} />
+                            }
+                        />
                     </Routes>
                 </Container>
             </StyledEngineProvider>
