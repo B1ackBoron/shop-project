@@ -6,6 +6,7 @@ export type Product = {
     type: string
     price: number
     image: string
+    category?: string
 }
 
 const productsArray: Product[] = [
@@ -17,6 +18,7 @@ const productsArray: Product[] = [
         type: 'phone',
         price: 1500,
         image: '/images/iphone-14pro.webp',
+        category: 'phone',
     },
     {
         id: 2,
@@ -26,6 +28,7 @@ const productsArray: Product[] = [
         type: 'phone',
         price: 1000,
         image: '/images/iphone-13pro.webp',
+        category: 'phone',
     },
     {
         id: 3,
@@ -35,6 +38,7 @@ const productsArray: Product[] = [
         type: 'phone',
         price: 1000,
         image: '/images/iphone-14.webp',
+        category: 'phone',
     },
     {
         id: 4,
@@ -44,6 +48,7 @@ const productsArray: Product[] = [
         type: 'phone',
         price: 2000,
         image: '/images/iphone-11promax.webp',
+        category: 'phone',
     },
     {
         id: 5,
@@ -53,6 +58,7 @@ const productsArray: Product[] = [
         type: 'phone',
         price: 500,
         image: '/images/iphone-se.webp',
+        category: 'phone',
     },
     {
         id: 6,
@@ -62,6 +68,7 @@ const productsArray: Product[] = [
         type: 'phone',
         price: 1500,
         image: '/images/iphone-12pro.webp',
+        category: 'sport',
     },
 ]
 

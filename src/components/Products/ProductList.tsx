@@ -18,30 +18,32 @@ const ProductList = ({ addProductToCart }: Props) => {
                 List of Products
             </Typography>
             <Grid container spacing={4}>
-                {productsArray.map(
-                    ({
-                        id,
-                        title,
-                        description,
-                        type,
-                        capacity,
-                        price,
-                        image,
-                    }) => (
-                        <Grid item xs={12} sm={6} md={4} key={id}>
-                            <ProductListItem
-                                id={id}
-                                title={title}
-                                description={description}
-                                type={type}
-                                capacity={capacity}
-                                price={price}
-                                image={image}
-                                addProductToCart={addProductToCart}
-                            />
-                        </Grid>
-                    )
-                )}
+                {productsArray
+                    .filter((item) => item.category === 'phone')
+                    .map(
+                        ({
+                            id,
+                            title,
+                            description,
+                            type,
+                            capacity,
+                            price,
+                            image,
+                        }) => (
+                            <Grid item xs={12} sm={6} md={4} key={id}>
+                                <ProductListItem
+                                    id={id}
+                                    title={title}
+                                    description={description}
+                                    type={type}
+                                    capacity={capacity}
+                                    price={price}
+                                    image={image}
+                                    addProductToCart={addProductToCart}
+                                />
+                            </Grid>
+                        )
+                    )}
             </Grid>
         </>
     )
