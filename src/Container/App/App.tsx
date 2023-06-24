@@ -7,6 +7,7 @@ import CartPage from 'pages/Cart/CartPage'
 import Home from 'pages/Home/Home'
 import { Route, Routes } from 'react-router-dom'
 import { omit } from 'lodash'
+import ProductPage from 'pages/Product/ProductPage'
 
 type ProductsInCart = {
     [id: number]: number
@@ -71,6 +72,10 @@ const App = () => {
                                 element={
                                     <CartPage productsInCart={productsInCart} />
                                 }
+                            />
+                            <Route
+                                path="/products/:id"
+                                element={<ProductPage />}
                             />
                         </Routes>
                     </Container>
