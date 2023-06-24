@@ -54,9 +54,6 @@ const App = () => {
                 >
                     <CssBaseline />
                     <Header productsInCart={productsInCart} />
-                    <button onClick={() => removeProductFromCart(1)}>
-                        Remove product
-                    </button>
                     <Container
                         sx={{
                             padding: '40px 0',
