@@ -6,6 +6,7 @@ import CartPage from 'pages/Cart/CartPage'
 import Home from 'pages/Home/Home'
 import { Route, Routes } from 'react-router-dom'
 import CheckoutPage from 'pages/Checkout/CheckoutPage'
+import PaymentPage from 'pages/Payment/PaymentPage'
 
 const App = () => {
     return (
@@ -21,6 +22,7 @@ const App = () => {
                     <Route path="/" element={<Home />} />
                     <Route path="/cart" element={<CartPage />} />
                     <Route path="/checkout" element={<CheckoutPage />} />
+                    <Route path="/payment" element={<PaymentPage />} />
                 </Routes>
             </Container>
         </StyledEngineProvider>
